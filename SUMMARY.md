@@ -19,3 +19,4 @@
     * [3.5 Eureka实战](chapter3/section3.5.md)
     * [3.6 Eureka故障演练](chapter3/section3.6.md)
     * [3.7 本章小结](chapter3/section3.7.md)
+
