@@ -17,23 +17,25 @@
 - 开源项目集合<http://github.com/spring-cloud>
 - 版本号管理：按伦敦地铁站的名字，按首字母排序
 - 组件列表
+***
+  | 组件名称 |        所属项目        |     组件分类     |
+  |:--------:|:----------------------:|:----------------:|
+  |  Eureka  |  spring-cloud-netflix  |     注册中心     |
+  |   Zuul   |  spring-cloud-netflix  |    第一代网关    |
+  | Sidccar  |  spring-cloud-netflix  |      多语言      |
+  |  Ribbon  |  spring-cloud-netflix  |     负载均衡     |
+  | Hystrix  |  spring-cloud-netflix  |      熔断器      |
+  | Turbine  |  spring-cloud-netflix  |     集群监控     |
+  |  Feign   | spring-cloud-openfeign | 声明式HTTP客户端 |
+  |  Consul  |  spring-cloud-consul   |     注册中心     |
+  | Gateway  |  spring-cloud-gateway  |    第二代网关    |
+  |  Sleuth  |  spring-cloud-sleuth   |     链路追踪     |
+  |  Config  |  spring-cloud-config   |     配置中心     |
+  |   Bus    |    spring-cloud-bus    |       总线       |
+  | Pipeline | spring-cloud-pipelines |     部署管道     |
+  | Dataflow | spring-cloud-dataflow  |     数据处理     |
 
-| 组件名称 |        所属项目        |     组件分类     |
-|:--------:|:----------------------:|:----------------:|
-|  Eureka  |  spring-cloud-netflix  |     注册中心     |
-|   Zuul   |  spring-cloud-netflix  |    第一代网关    |
-| Sidccar  |  spring-cloud-netflix  |      多语言      |
-|  Ribbon  |  spring-cloud-netflix  |     负载均衡     |
-| Hystrix  |  spring-cloud-netflix  |      熔断器      |
-| Turbine  |  spring-cloud-netflix  |     集群监控     |
-|  Feign   | spring-cloud-openfeign | 声明式HTTP客户端 |
-|  Consul  |  spring-cloud-consul   |     注册中心     |
-| Gateway  |  spring-cloud-gateway  |    第二代网关    |
-|  Sleuth  |  spring-cloud-sleuth   |     链路追踪     |
-|  Config  |  spring-cloud-config   |     配置中心     |
-|   Bus    |    spring-cloud-bus    |       总线       |
-| Pipeline | spring-cloud-pipelines |     部署管道     |
-| Dataflow | spring-cloud-dataflow  |     数据处理     |
+***
 
 ## 1.2.4 SpringCloud与服务治理中间件
 
