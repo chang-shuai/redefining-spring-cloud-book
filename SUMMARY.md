@@ -1,4 +1,4 @@
-# 目录
+# Summary
 
 * [介绍](README.md)
 * [第 1 章 微服务与Spring Cloud](chapter1/README.md)
@@ -19,3 +19,10 @@
     * [3.5 Eureka实战](chapter3/section3.5.md)
     * [3.6 Eureka故障演练](chapter3/section3.6.md)
     * [3.7 本章小结](chapter3/section3.7.md)
+* [第 4 章 Spring Cloud Feign 使用扩展](chapter4/README.md)
+    * [4.1 Feign概述](chapter4/section4.1.md)
+    * [4.2 Feign的基础功能](chapter4/section4.2.md)
+    * [4.3 Feign的实战应用](chapter4/section4.3.md)
+    * [4.4 venus-cloud-feign设计与使用](chapter4/section4.4.md)
+    * [4.5 本章小结](chapter4/section4.5.md)
+
