@@ -25,4 +25,9 @@
     * [4.3 Feign的实战应用](chapter4/section4.3.md)
     * [4.4 venus-cloud-feign设计与使用](chapter4/section4.4.md)
     * [4.5 本章小结](chapter4/section4.5.md)
+* [第 5 章 Spring Cloud Ribbon 实战运用](chapter5/README.md)
+    * [5.1 Spring Cloud Ribbon概述](chapter5/section5.1.md)
+    * [5.2 Spring Cloud Ribbon实战](chapter5/section5.2.md)
+    * [5.3 Spring Cloud Ribbon进阶](chapter5/section5.3.md)
+    * [5.4 本章小结](chapter5/section5.4.md)
 
