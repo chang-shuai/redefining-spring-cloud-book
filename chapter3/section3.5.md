@@ -52,6 +52,7 @@
 ### 3.5.7 基于metedata路由实例
 
 - 通过metedata属性进行灰度测试或者不宕机升级
-- ILoadBalancer接口：在Ribbon中，ILoadBalancer选取Server的逻辑主要有一系列的IRule来实现
-- IRule接口：RoundRobinRule，采用轮询调度算法规则来选取Server
+- ILoadBalancer接口：在Ribbon中，ILoadBalancer选取Server的逻辑主要有一系列的IRule来实现 com.netflix.loadbalancer.ILoadBalancer
+- IRule接口：RoundRobinRule，采用轮询调度算法规则来选取Server com.netflix.loadbalancer.IRule
+- 可以自定义实现PredicateBasedRule：com.netflix.loadbalancer.PredicateBasedRule
 - MetadataAwarePredicate：可以基于Guava的Predicate进行过滤，Predicate将Server的metedata跟上下文传递的attribute信息进行匹配，全部匹配才返回true
