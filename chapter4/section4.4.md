@@ -27,4 +27,57 @@
     <version>1.0.0</version>
 </dependency>
 ```
-- 
+- 创建provider-client，定义服务之间调用的Feign接口
+```java
+@FeignClient(name = "provider")
+public interface UserFeignService {
+    @RequestMapping(value = "/user/add", method = RequestMethod.GET)
+    String addUser(User user);
+
+    @RequestMapping(value = "/user/update", method = RequestMethod.POST)
+    String updateUser(@RequestBody User user);
+}
+```
+
+- 服务提供者实现工程,编写Feign接口对应的服务提供者实现
+
+```java
+@RestController
+public class UserController implements UserFeignService {
+
+
+    @Override
+    public String addUser(User user) {
+        return "hello," + user.getName();
+    }
+
+    @Override
+    public String updateUser(User user) {
+        return "hello," + user.getName();
+    }
+}
+```
+
+2. 创建服务消费者工程
+
+- 依赖注入服务提供着提供的接口，进行服务间调用
+
+```java
+@RestController
+public class UserController {
+    @Autowired
+    private UserFeignService userFeignService;
+
+    @RequestMapping(value = "/add", method = RequestMethod.POST)
+    public String addUser(@RequestBody
+                          @ApiParam(name = "用户", value = "传入json格式", required = true) User user) {
+        return this.userFeignService.addUser(user);
+    }
+
+    @RequestMapping(value = "/update", method = RequestMethod.POST)
+    public String updateUser(@RequestBody
+                          @ApiParam(name = "用户", value = "传入json格式", required = true) User user) {
+        return this.userFeignService.updateUser(user);
+    }
+}
+```
